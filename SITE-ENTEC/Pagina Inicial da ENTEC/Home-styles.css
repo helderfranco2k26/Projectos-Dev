@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+nav{
+    position: fixed;
+    display: flex;
+    background-color: #06023B;
+    height: 18vh;
+    width: 100%;
+    padding-left:60px ;
+}
+.nav{
+    display:block;
+    justify-content: start;
+    align-content: center;
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+    
+}
+.nav-list li{
+    letter-spacing: 2px;
+    margin-right: 20px;
+}
+.logo{
+    padding-bottom: 15px;
+}
+.logo a{
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #02C3BDEA;
+    letter-spacing: 2px;
+    text-decoration: none;
+    left: 5vh;
+}
+.navlink{
+    color:#fff;
+    text-decoration: none;
+    transition: 0.1s;
+}
+.navlink:hover{
+    color: #02C3BDEA;
+    opacity: 0.9;
+}
+.search{
+    position: fixed;
+    top:30px;
+    right: 65px;
+}
+.search a{
+    color: #fff;
+    text-decoration: none;
+}
+.nav-2{
+    position: fixed;
+    top: 10vh;
+    right: 60px;
+}
+.pesquisar{
+    color: #fff;
+    text-decoration: none;
+    transition: 0.1s;
+}
+.pesquisar:hover{
+    color: #02C3BDEA;
+    opacity: 0.9;
+}
+.search-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: 20px;
+    border-radius: 40px;
+    background: #06023B;
+    
+}
+.search-txt{
+    padding: 0;
+    border-radius: 2px;
+    border: solid 1px;
+    border-color:#02C3BDEA ;
+    background: none;
+    color: #fff;
+    font-size: 18px;
+    outline: none;
+    width: 0;
+    transition: 0.5s;
+}
+.search-box:hover > .search-txt{
+    width: 500px;
+}
+
+/* ESTA É PARTE DO SOBRE NÓS*/
+.corpo-1{
+    /*background:url('imag/robo01-900.png') no-repeat center center;*/
+    top: 18vh;
+    background-image:linear-gradient(90deg,  #06023B 30%, #02C3BDEA );
+    height: 80vh;
+    padding: 50px 0 30px 0px;
+    display: flex;
+    justify-content: start;
+}
+.main{
+    display: block;
+    justify-content: end;
+    align-content: center;
+    color: #fff;
+    width: 100vh;
+    padding: 0 5px 5px 55px;
+}
+.main h1{
+    color: #fff;
+    margin-bottom: 20px;
+}
+.main p{
+    width: 100%;
+    padding-bottom: 60px;
+    font-size: 1em;
+}
+.btn{
+    padding: 10px 15px;
+    cursor: pointer;
+    background:#02C3BDEA;
+    font-size:medium;
+    border: none;
+    border-radius: 2px;
+    transition: 0.1s;
+}
+.btn:hover{
+    background: #fff;
+    opacity: 0.9;
+}
+.btn a{
+    text-decoration: none;
+    color: black;
+}
+/*ESTA É PARTE DO CODIGO CONDIZ COM A PARTE DOS SERVIÇOS*/
+.servico{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+.img{
+    display: flex;
+    margin-bottom: 10px;
+}
+.quadros-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+    background-color: #e4e4e4fc;
+    padding: 10px;
+    width: 50vh;
+    height: 55vh;
+    transition: 0.20s;
+}
+.quadros-img:hover{
+    box-shadow: 0 8px 8px rgba(1, 1, 1, 0.5);
+    margin-bottom: 8px;
+}
+.quadro-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 85%;
+}
+
+
+/* ESTA É A PARTE DO CODIGO QUE CONDIZ COM CONTACTOS*/
+.corpo-2{
+    padding: 80px 60px 0 60px;
+}
+
+.links{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 30vh;
+    list-style-type: none;
+}
+.links a{
+     text-decoration: none;
+     color: #06023B;
+}
+ul li a{
+    text-decoration: none;
+    color: #06023B;
+}
+h1{
+    color: #06023B;
+}
+h2{
+    color: #06023B;
+}

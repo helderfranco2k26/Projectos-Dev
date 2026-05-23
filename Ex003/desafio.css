@@ -1,0 +1,186 @@
+@font-face {
+    font-family: 'Android';
+    src: url(fontes/idroid.otf) format("truetype");
+}
+@font-face {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/bebasneue/v16/JTUSjIg69CK48gW7PXoo9Wdhyzbi.woff2) format('woff2');
+    unicode-range: U +0100 -02BA, U +02BD -02C5, U +02C7 -02CC, U +02CE -02D7, U +02DD -02FF, U +0304, U +0308, U +0329, U +1D00 -1DBF, U +1E00 -1E9F, U +1EF2 -1EFF, U +2020, U +20A0 -20AB, U +20AD -20C0, U +2113, U +2C60 -2C7F, U + A720-A7FF;
+}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root {
+    --cor0: #ebe5c5;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+    --fonte-padrão: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: "Bebas Neue", sans-serif;
+    --fonte-android: "Android";
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--cor0);
+    font-family: var(--fonte-padrão);
+}
+a.external::after{
+    content: '\00A0\1F517';
+}
+/*--------------------------------------------------HEADER----------------------------------------------------------*/
+
+header{
+    background: var(--cor5);
+    background-image: linear-gradient(to bottom, #2fa866, #063d1e);
+    min-height: 150px;
+    padding-top: 40px;
+    text-align: center;
+}
+header > h1{
+    color: #fff;
+    font-family: var(--fonte-destaque);
+    font-size: 2.5em;
+    text-shadow: 2px 2px 0 rgba(0, 0,0, 0.430);
+    margin-bottom: 25px;
+}
+header > p{
+    color: #fff;
+    font-size: 1.2em;
+    font-family: var(--fonte-destaque);
+    max-width: 445px;
+    margin: auto;
+    text-shadow: 2px 2px 0 rgba(0, 0,0, 0.430);
+    padding-bottom: 45px;
+}
+nav{
+    background-color: var(--cor5);
+    padding: 8px 5px;
+    min-width: 280px;
+}
+nav > a{
+    padding: 8px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1em;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.linck-cabeca:hover{
+    background-color: var(--cor3);
+    color: var(--cor5);
+}
+/*------------------------------------------------------------MAIN--------------------------------------------------------*/
+main{
+    background-color: #fff;
+    min-width: 320px;
+    max-width: 1050px;
+    margin: auto;
+    box-shadow: 1px 2px 10px rgba(0, 0,0, 0.430);
+    border-radius: 0 0 10px 10px;
+}
+article{
+    padding: 18px;
+    min-width: 320px;
+    max-width: 1050px;
+    margin: auto;
+}
+article > h1{
+    font-family: var(--fonte-android);
+    color: var(--cor5);
+    font-weight: normal;
+    font-size: 1.8em;
+}
+article > p{
+    padding: 20px 0;
+    text-indent: 30px;
+    text-align: justify;
+    line-height: 2em;
+}
+.text > strong{
+    color: var(--cor4);
+    font-weight: bold;
+    padding: 2px 6px;
+}
+.text > a{
+    color: var(--cor5);
+    background-color: var(--cor2);
+    padding: 2px 6px;
+    text-decoration: none;
+    font-weight: bolder;
+}
+.text > a:hover{
+    color: var(--cor4);
+    text-decoration: underline;
+}
+article > h2{
+    font-family: var(--fonte-android);
+    color: #1a5c37;
+    background-image: linear-gradient(to right, #83e1ad, #fff);
+    font-size: 1.3em;
+    font-weight: normal;
+    padding-left: 8px;
+}
+img{
+    width: 100%;
+}
+.bugdroid{
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+.video-android{
+    background-color: var(--cor5);
+    margin: 15px -18px;
+    padding: 20px 0;
+}
+.video-android > video{
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+aside{
+    margin: 30px 0 10px 0;
+    background-color: var(--cor1);
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+aside > h3{
+    font-family: var(--fonte-destaque);
+    font-size: 0.9em;
+    color: #fff;
+    background-color: #1a5c37;
+    padding: 15px 7px;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 3px 5px 12px rgba(0, 0,0, 0.430);
+    text-shadow: 2px 2px 0 rgba(0, 0,0, 0.430);
+}
+aside > p{
+    margin: 15px 7px;
+    text-indent: 30px;
+    line-height: 2em;
+    text-align: justify;
+}
+aside > ul{
+    list-style: inside;
+    columns: 2;;
+}
+ul > li{
+    list-style-type: '\2714\00A0';
+}
+footer{
+    color: #fff;
+    background-color: var(--cor5);
+    padding: 5px;
+    font-size: 0.8em;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 30px;
+
+}

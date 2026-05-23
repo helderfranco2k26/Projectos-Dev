@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registar|ENTEC</title>
+    <link rel="stylesheet" href="Register-style.css">
+    <link rel="shortcut icon" href="../icon/entec.ico" type="image/x-icon">
+</head>
+<body>
+    <nav class="barra-superior">
+        <h1><a href="../Pagina Inicial da ENTEC/Home.html">ENTEC</a></h1>
+        <a href="#">Help</a>
+    </nav>
+    <div class="container">
+        <header>
+            <h1>Criar conta</h1>
+            <p>Insira as sua informações</p>
+        </header>
+        <main>
+            <form>
+                <div class="input-text">
+                    <input type="text" id="Nome" placeholder="Nome">
+                    <label for="Nome">
+                        Nome
+                    </label>
+                </div><div class="input-text">
+                    <input type="text" id="Sobrenome" placeholder="Sobrenome">
+                    <label for="Sobrenome">
+                        Sobrenome
+                    </label>
+                </div>
+                  <div class="input-text">
+                    <input type="text" list="Paises" id="País" placeholder="País">
+                    <datalist id="Paises">
+                        <option value="Angola">Angola</option>
+                        <option value="Argelia"></option>
+                        <option value="Albania"></option>
+                        <option value="Argentina"></option>
+                        <option value="Brasil"></option>
+                    </datalist>
+                </div>
+                <div class="input-text">
+                    <input type="text" id="email" placeholder="Endereço de e-mail">
+                    <label for="email">
+                        email
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="lembra-me" checked>
+                    <label for="lembra-me">Li e concordo com os <a href="#">termos e condições</a>, 
+                            <br>também consinto o proceassamento dos meus 
+                            <br>dados pessoais conforme descrito 
+                            <br>adiante <a href="#">aqui</a>.</label>
+                </div>
+                <button>Continuar</button>
+            </form>
+        </main>
+        <footer>
+            <div class="criar">
+                <span>
+                    <p>Já tem uma conta?<a href="../pagina de Login-ENTEC/Login.html">Iniciar Sessão</a></p>
+                </span>
+            </div>
+            <div class="alternativa">
+                <span>OU</span>
+            </div>
+            <div class="redes-sociais">
+                <a href="#"><strong>Entrar com o Google</strong></a>
+                <a href="#"><strong>Entrar com o Facebook</strong></a>
+                <a href="#"><strong>Entrar com o Linkedin</strong></a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

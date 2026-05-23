@@ -1,0 +1,89 @@
+*{  // O * significa tudo e nestas aspas nós vamos zerar tudo, poruqe as paginas têm seus tamanhos definidos 
+    margin: 0; // É onde definimos a margem da nossa pagina
+    padding: 0; 
+    box-sizing: border-box; // É a forma como vamos calcular
+}
+
+html{
+    scroll-behavior: smooth; // O que é o scroll behavior "scrol é o movimeto que o mause faz", "Behavior é o comportamento" "smooth é leve"
+}
+
+:root {
+    --primaria: #4f46e5;
+    --secundaria: #7c3aed;
+    --preto: #0f172a;
+    --maispreto: #0a0f1c;
+    --branco: #e2e8f0;
+    --vidro: #rgba(255, 255, 255, 0.1);
+}
+
+body{
+    background-color: var(--preto); //O "backgroundd" siginfica a parte de tras da pagina ou folha de rosto
+    color: var(--branco);
+}
+.navegacao{
+
+    position: fixed; // Positionn como diz o nome e a posicao 
+    top: 0; // topp zero e para garatir que ele fica na posicao inicial
+    background: rgba(15, 23, 42, 0.8);
+    width: 100%; // este e para definir o tamanho e ele vem acompanhado as vezes com altura
+    z-index: 100; // Este serve para o objeto ou o que queremos ficar em frente de todos 
+    padding: 1.5rem; 
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    list-style: none; // serve para retirar as bolinhas que a UL cria;
+    gap: 3rem; /* serve para separar os iten*/
+
+}
+.menu-link{
+    text-decoration: none;
+    color: var(--branco);
+    font-weight: 500;
+    position: relative;
+    padding: 0.5rem 0;
+}
+
+.menu-link::after{
+    content:'';
+    height: 2px;
+    width: 0%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(90deg, var(--primaria), var(--secundaria));
+    transition: width 0.5s ease;
+}
+
+.menu-link:hover::after {
+    width: 100%;
+}
+.cabecalho{
+    min-height: 100vh;  // O minimo de ocupacao 100vh que significa ocupar a tela toda
+    display: flex; /*/ serve para habilitar certas funcoes para se tornar mais flexivl*/
+    justify-content: center; /*/ este iten e o de baixo permitem que alinhe as coisas na vertical e na horizontal */
+    align-items: center;
+    flex-direction: column;
+
+}
+.foto-perfil{
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 0 20px rgba(79, 70, 229, 0.3);
+    border-radius: 50%;
+    border: 4px solid var(--vidro);
+}
+.projeto-imagem{
+    width: 400px;
+    height: 400px;
+    box-shadow: 0 0 20px rgba(69, 60, 229, 0.9);
+    border-radius: 50%;
+    border: 5px solid var(--branco);
+}
+
+.Projetos{
+    min-height: 100vh;
+    display: flex;
+}
