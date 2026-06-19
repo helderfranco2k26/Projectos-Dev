@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(93, 91, 91);
+}
+.quadro{
+    border: 2px solid black;
+    border-radius: 20px;
+    height: 200px;
+    margin: 10px;
+    background-image: url('imagens/wallpaper003.jpg');
+}
+
+div#q1{
+    background-position: left top;
+}
+div#q2{
+    background-position: right top;
+}
+div#q3{
+    background-position: center center;
+    background-size: cover;
+}
+div#q4{
+    background-position: left bottom;
+}
+div#q5{
+    background-position: right bottom;
+}
