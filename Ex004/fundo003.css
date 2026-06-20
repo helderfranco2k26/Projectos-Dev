@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 100vh;
+    background-color: black;
+    background-image: url('imagens/iPhone-17.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+}
+.tema{
+    color: rgb(96, 95, 95);
+    text-align: center;
+    font-size: 1.6em;
+    margin: 10px 0 70px 0;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.703);
+}
+main{
+    border-radius: 10px;
+    max-width: 600px;
+    color: #fff;
+    text-shadow: 2px 2px 1px rgb(0, 0, 0);
+    padding: 20px;
+    margin: auto;
+}
+section{
+    font-size: 1.2em;
+}
+section > h2{
+    color: #fff;
+    margin-bottom: 5px;
+}
+section > p{
+    text-indent: 2em;
+}
