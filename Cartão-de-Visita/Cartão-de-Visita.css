@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    ---font-primairia:  "Roboto Condensed", sans-serif;
+}
+body{
+    height: 100vh;
+    background-color: black;
+    background-image: url('imag/Fundo003.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+}
+.info > h1{
+    font-family: var(---font-primairia);
+    text-align: left;
+    max-width: 510px;
+    font-size: 6.01em;
+    color: #fff;
+    text-shadow: 2px 5px 2px rgba(0, 0, 0, 0.671);
+}
+.info > p{
+    color: #fff;
+    font-size: 3em;
+    background-image: linear-gradient( to right, #1C4BFF 25%, #0FA9FE);
+    margin-bottom: 50px;
+}
+section {
+    display: flex;
+    flex-direction: column;
+}
+section > span{
+    display: flex;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+span > .icon{
+    border-radius: 50%;
+    padding: 4px 8px;
+    margin-right: 12px;
+    background-color: #1C4BFF;
+}
+span > a{
+    text-decoration: none;
+    color: #fff;
+    text-shadow: 2px 5px 2px rgba(0, 0, 0, 0.671);
+}
+.container > .foto{
+    width: 70vh;
+    height: 70vh;
+    border: 10px solid rgb(68, 68, 246);
+    margin: 0 0 0 200px;
+    border-radius: 50%;
+    background-image: url('imag/helder-ende.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
