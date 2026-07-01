@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+        font-family: 'magic';
+        src: url('font/Nothing\ Magic.ttf') format('truetype');
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --color001: #1C3527;
+    --color002: #315E44;
+    --color003: #fff3da;
+    --color004: #94C7AB;
+    --font-principal: "Roboto", sans-serif;
+    --font-logo: 'magic';
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: var(--color001);
+    font-family: var(--font-principal);
+}
+nav > .logo{
+    font-size: 2.5em;
+    font-family: var(--font-logo);
+    font-weight: lighter;
+    color: #fff;
+    margin-left: 10px;
+}
+.navbar > a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    margin-right: 20px;
+    padding: 10px 15px;
+    border-radius: 30px;
+    transition: .5s;
+}
+.navbar > a:hover{
+    background-color: var(--color002);
+
+}
+span > a{
+    text-decoration: none;
+    font-size: 1.5em;
+    margin-right: 20px;
+    padding: 10px;
+    border-radius: 60px;
+    background-color: var(--color003);
+    transition: .5s;
+}
+span > a:hover{
+    background-color: #fae5bd;
+}
+/*-------------------------------------------------------------HEADER------------------------------------------------*/
+header{
+    height: 85vh;
+    background-color: var(--color001);
+    background-image: linear-gradient(to top, #3c6c5050), url(imagens/FOTO-CAPA.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header > h1{
+    font-family: var(--font-principal);
+    font-size: 3.5em;
+    color: #fff;
+    max-width: 400px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+header > p{
+    color: #fff;
+    font-family: var(--font-principal);
+    font-size: 1em;
+    max-width: 390px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.box-card{
+    background-color: #fff;
+    display: block;
+    padding: 7.5px 20px;
+    border-radius: 5px;
+}
+.box-card > .navbar2{
+    min-width: 600px;
+    padding: 3px 0;
+    margin-bottom: 10px;
+}
+.navbar2 > a{
+    font-size: 1.1em;
+    text-decoration: none;
+    margin-right: 0.5px;
+    padding: 10px 15px;
+    background-color: var(--color003);
+    color:black;
+    border-radius: 10px 10px 0 0;
+    transition: .3s;
+}
+.navbar2 > a:hover{
+    background-color: #5e8f73;
+    color: #fff;
+}
+.search{
+    padding: 15px 0;
+}
+.search > input{
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.388);
+    min-width: 460px;
+    outline: none;
+    margin-right: 3px;
+}
+::placeholder{
+    color: black;
+    font-family: var(--font-principal);
+    font-size: 0.95em;
+    opacity: 0.5;
+}
+.search > label{
+    padding: 12px;
+    border-radius: 5px;
+    background-color: var(--color001);
+}
+.search > label:hover{
+    background-color: var(--color002);
+}
+label > a{
+    text-decoration: none;
+    color: #fff;
+    font-family: var(--font-principal);
+    font-size: 0.95em;
+    font-weight: 700;
+}
